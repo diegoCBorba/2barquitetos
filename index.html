@@ -8,43 +8,51 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
     <link rel="stylesheet" href="style/style.css">
     
     <title>DoisB Arquitetos</title>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 </head>
 <body>
     <!--HEADER-->
     <div class="bg-home">
         <header>
             <nav class="header-content container">
-                <div class="header-icons">
-                    <a href="">
+                <div class="header-icons" data-aos="fade-down">
+                    <a href="https://www.instagram.com/doisb.arquitetos/" target="_blank">
                         <i class="fa-brands fa-instagram fa-2x"></i>
                     </a>
-                    <a href="">
+                    <a href="https://api.whatsapp.com/send?phone=5583996391159&text=Quero%20fazer%20um%20agendamento%20hoje!" target="_blank">
                         <i class="fa-brands fa-whatsapp fa-2x"></i>
                     </a>
-                    <a href="">
+                    <a href="" target="_blank">
                         <i class="fa-brands fa-tiktok fa-2x"></i>
                     </a>
                 </div>
 
-                <div class="header-logo">
-                    <img src="imagens/logo-p.png" alt="Logo do Escritório">
+                <div class="header-logo" data-aos="fade-up" data-aos-delay="300ms">
+                    <img 
+                    src="imagens/logo-p.png" 
+                    alt="Logo do Escritório" 
+                    data-aos="flip-up"
+                    data-aos-delay="300" 
+                    data-aos-duration="1500">
                 </div>
 
-                <div>
-                    <a class="header-button" href="">
+                <div data-aos="fade-down">
+                    <a class="header-button" href="https://api.whatsapp.com/send?phone=5583996391159&text=Quero%20fazer%20um%20agendamento%20hoje!" target="_blank">
                         Agendar horário
                     </a>
                 </div>
             </nav>
 
-            <main class="hero container">
+            <main class="hero container" data-aos="fade-up" data-aos-delay="400">
                 <h1>DoisB Arquitetos Associados</h1>
                 <p>Horário de funcionamento: --:-- às --:--</p>
-                <a href="" class="button-contact" target="_blank">
+                <a href="https://api.whatsapp.com/send?phone=5583996391159&text=Quero%20fazer%20um%20agendamento%20hoje!" class="button-contact" target="_blank">
                     Agendar horário
                 </a>
             </main>
@@ -56,11 +64,11 @@
     <!--ABOUT-->
     <section class="about">
         <div class="container about-content">
-            <div>
+            <div data-aos="zoom-in" data-aos-delay="100">
                 <img src="imagens/casas-agrupadas.png" alt="Casas agrupadas">
             </div>
 
-            <div class="about-description">
+            <div class="about-description" data-aos="zoom-out-left" data-aos-delay="100">
                 <h2>Sobre</h2>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam aspernatur corporis laboriosam quasi, nostrum accusantium itaque quo. Nobis deleniti molestias quam laboriosam mollitia maxime voluptas ex, et illum nisi reprehenderit!</p>
                 <p>Horário de atendimento: <strong>--:--</strong> às <strong>--:--</strong></p>
@@ -78,7 +86,7 @@
         </div>
 
         <section class="projetos">
-            <div class="projeto">
+            <div class="projeto" data-aos="fade-up" data-aos-delay="100">
                 <img src="imagens/projeto1.png" alt="Casa Moderna">
                 <div class="projeto-info">
                     <strong>Projete sua Casa</strong>
@@ -86,7 +94,7 @@
                 </div>
             </div>
 
-            <div class="projeto">
+            <div class="projeto" data-aos="fade-up" data-aos-delay="150">
                 <img src="imagens/projeto2.png" alt="Loja de Roupa">
                 <div class="projeto-info">
                     <strong>Interiores</strong>
@@ -94,7 +102,7 @@
                 </div>
             </div>
 
-            <div class="projeto">
+            <div class="projeto" data-aos="fade-up" data-aos-delay="200">
                 <img src="imagens/projeto3.png" alt="Projeto farmácia">
                 <div class="projeto-info">
                     <strong>Monte seu negócio</strong>
@@ -114,13 +122,13 @@
 
     <footer class="footer">
         <div class="footer-icons">
-            <a href="">
+            <a href="https://www.instagram.com/doisb.arquitetos/" target="_blank">
                 <i class="fa-brands fa-instagram fa-2x"></i>
             </a>
-            <a href="">
+            <a href="https://api.whatsapp.com/send?phone=5583996391159&text=Quero%20fazer%20um%20agendamento%20hoje!" target="_blank">
                 <i class="fa-brands fa-whatsapp fa-2x"></i>
             </a>
-            <a href="">
+            <a href="" target="_blank">
                 <i class="fa-brands fa-tiktok fa-2x"></i>
             </a>
         </div>
@@ -130,13 +138,19 @@
         </div>
 
         <p>Copyright 2023 | DoisB Arquitetos Associados - Todos direitos reservados.</p>
+        <p>Criado por <a href="github.com/diegoCBorba" class="my-github">Diego Cardoso</a></p>
     </footer>
 
     <!-- Button Whatsapp-->
 
-    <a href="">
-        <img src="" alt="">
+    <a href="https://api.whatsapp.com/send?phone=5583996391159&text=Quero%20fazer%20um%20agendamento%20hoje!" 
+    class="btn-whatsapp" 
+    target="_blank"
+    data-aos="zoom-in-up" data-aos-delay="400">
+        <img src="imagens/whatssapp.svg" alt="Botão whatsapp">
+        <span class="tooltip-text">Agende seu horário</span>
     </a>
 
+    <script src="script.js"></script>
 </body>
 </html>

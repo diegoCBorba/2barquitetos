@@ -227,6 +227,15 @@ i {
   max-width: 780px;
 }
 
+.my-github {
+  color: #F2F2F2;
+  font-weight: bold;
+}
+
+.my-github:hover {
+  text-decoration: underline;
+}
+
 .projetos {
   display: flex;
   justify-content: center;
@@ -303,8 +312,27 @@ i {
   color: #F2F2F2;
 }
 
+.footer-icons a:hover i {
+  animation: translateY 0.8s infinite alternate;
+  color: #818C70;
+}
+
 .footer-logo {
   width: 166px;
+}
+
+.btn-whatsapp {
+  position: fixed;
+  bottom: 14px;
+  right: 24px;
+  z-index: 99;
+}
+.btn-whatsapp img {
+  max-width: 74px;
+  transition: transform 0.4s;
+}
+.btn-whatsapp img:hover {
+  transform: scale(1.1);
 }
 
 body {
@@ -331,4 +359,30 @@ img {
 a {
   cursor: pointer;
   text-decoration: none;
+}
+
+.btn-whatsapp .tooltip-text {
+  visibility: hidden;
+  position: absolute;
+  width: 120px;
+  top: 8px;
+  left: -144px;
+  padding: 4px;
+  border-radius: 4px;
+  text-align: center;
+  background-color: #818C70;
+  color: #F2F2F2;
+  opacity: 0;
+  transition: opacity 0.4s;
+}
+
+.btn-whatsapp:hover .tooltip-text {
+  visibility: visible;
+  opacity: 1;
+}
+
+@media screen and (max-width: 760px) {
+  .btn-whatsapp img {
+    max-width: 64px;
+  }
 }/*# sourceMappingURL=style.css.map */

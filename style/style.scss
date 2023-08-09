@@ -39,3 +39,32 @@ a{
     cursor: pointer;
     text-decoration: none;
 }
+
+.btn-whatsapp .tooltip-text{
+    visibility: hidden;
+    position: absolute;
+    width: 120px;
+    top: 8px;
+    left: -144px;
+    padding: 4px;
+    border-radius: 4px;
+    text-align: center;
+    background-color: $light-green;
+    color: $white-font;
+    opacity: 0;
+    transition: opacity 0.4s;
+}
+
+.btn-whatsapp:hover .tooltip-text{
+    visibility: visible;
+    opacity: 1;
+}
+
+
+@media screen and (max-width: 760px){
+    .btn-whatsapp{
+        img{
+            max-width: 64px;
+        }
+    }
+}

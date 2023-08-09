@@ -162,6 +162,15 @@
     max-width: 780px;
 }
 
+.my-github{
+    color: $white-font;
+    font-weight: bold;
+}
+
+.my-github:hover{
+    text-decoration: underline;
+}
+
 .projetos{
     display: flex;
     justify-content: center;
@@ -245,6 +254,31 @@
     color: $white-font;
 }
 
+.footer-icons a:hover{
+    i{
+        animation: translateY 0.8s infinite alternate;
+        color: $light-green;
+    }
+}
+
 .footer-logo{
     width: 166px;
+}
+
+// Botão whatsapp
+
+.btn-whatsapp{
+    position: fixed;
+    bottom: 14px;
+    right: 24px;
+    z-index: 99;
+
+    img{
+        max-width: 74px;
+        transition: transform 0.4s;
+    }
+
+    img:hover{
+        transform: scale(1.1);
+    }
 }
