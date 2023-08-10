@@ -305,6 +305,9 @@ i {
   gap: 24px;
   color: #F2F2F2;
 }
+.footer p {
+  text-align: center;
+}
 
 .footer-icons {
   display: flex;
